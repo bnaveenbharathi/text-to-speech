@@ -1,0 +1,39 @@
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    background-color: rgb(61, 61, 61);
+}
+.main{
+text-align: center;
+}
+.main h1{
+    margin-bottom: 20px;
+    margin-top: -40px;
+    color:burlywood;
+}
+#convertbtn{
+    margin-top: 30px;
+    margin-bottom: 4cap;
+    padding: 6px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: blanchedalmond;
+}
+#textarea{
+    width: 200%;
+    outline: none;
+    margin-left: -130px;
+    background-color: rgb(231, 231, 231);
+    font-size: large;
+}
+.downloadBtn{
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: blanchedalmond;
+    outline: none;
+    border: none;
+}

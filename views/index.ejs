@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text To Speech</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css" integrity="sha512-/wqP/1981GNaKbX6JkJoPnMdfoatDQUrmWDt71GxVuaep3hqwoTVs05L3VlM11tvfdRBLQDrpKxoVUw9htIwZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="main">
+<h1>Text to Speech</h1>
+<form action="/" method="post">
+
+<textarea name="text"  cols="30" rows="10" id="textarea"></textarea><br>
+<input  value="convert into Mp3" id="convertbtn" type="button">
+<div id="btn">
+</div>
+</form>
+</div>
+
+<script>
+  const convertbtn=document.querySelector('#convertbtn')
+  const newbtn=document.querySelector('#btn')
+  let downloadbutton=false
+  convertbtn.addEventListener('click',()=>{
+    if(!downloadbutton){
+    const btn=document.createElement('b')
+    btn.innerHTML=`<button type="submit" class="downloadBtn">Download</button>`
+   setTimeout(()=>{
+    newbtn.appendChild(btn)
+    downloadbutton=true
+   },1000)
+  }})
+
+</script>
+
+</body>
+</html>
